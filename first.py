@@ -27,5 +27,3 @@ elif qs=='不需要':
     print('好的，再见')
 else:
     print('输入错误，请重新运行')
-
-else
