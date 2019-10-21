@@ -1,6 +1,0 @@
-GitHub Token: c218b962915d3feac44dbadffea1b2a4ac736934
-GitHub Gist: 234009ff19f2a491a6020297cd5dbc34
-GitHub Gist Type: Secret
-
-
-New Token: 1353589f41803f62782afe11c9d30973648141cf
