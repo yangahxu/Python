@@ -27,12 +27,12 @@
 # print(students[0])
 
 # 请运行以下代码：报错后，可读一下报错信息，然后将第6行注释掉再运行。
-# list3 = [1,2]
-# list3.append(3)
-# print(list3)
-# #list3.append(4,5)
-# list3.append([4,5])
-# print(list3)
+list3 = [1,2]
+list3.append(3)
+print(list3)
+#list3.append(4,5)
+list3.append([4,5])
+print(list3)
 
 # students = ['小明','小红','小刚']
 # students.append('小美')
@@ -55,10 +55,51 @@
 # print(album['周杰伦'])
 
 #修改成绩
-scores = {'小明':95,'小红':90,'小刚':90}
-del scores['小刚']
-print(scores)
-scores['小刚']=92
-print(scores)
-scores['小美']=85
-print(scores)
+# scores = {'小明':95,'小红':90,'小刚':90}
+# del scores['小刚']
+# print(scores)
+# scores['小刚']=92
+# print(scores)
+# scores['小美']=85
+# print(scores)
+
+
+# students1 = ['小明','小红','小刚']
+# students2 = ['小刚','小明','小红']
+# print(students1 == students2)
+
+# scores1 = {'小明':95,'小红':90,'小刚':100}
+# scores2 = {'小刚':100,'小明':95,'小红':90}
+# print(scores1 == scores2)
+
+# list1 = ['小明','小红','小刚','小美']
+# list1[1] = '小蓝'
+# print(list1)
+
+# dict1 = {'小明':'男'}
+# dict1['小明'] = '女'
+# print(dict1)
+
+#列表嵌套列表
+# students = [['小明','小红','小刚','小美'],['小强','小兰','小伟','小芳']]
+# print(students[1][1])
+
+# #字典嵌套字典
+# scores = {
+#     '第一组':{'小明':95,'小红':90,'小刚':100,'小美':85},
+#     '第二组':{'小强':99,'小兰':89,'小伟':93,'小芳':88}
+#     }
+# print(scores['第一组']['小刚'])
+
+
+# students = {
+#     '第一组':['小明','小红','小刚','小美'],
+#     '第二组':['小强','小兰','小伟','小芳']
+#     }
+# scores = [
+#     {'小明':95,'小红':90,'小刚':100,'小美':85},
+#     {'小强':99,'小兰':89,'小伟':93,'小芳':88}
+#     ]
+
+# print(students['第一组'][2])  
+# print(scores[0]['小刚'])
