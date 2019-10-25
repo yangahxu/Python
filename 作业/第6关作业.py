@@ -37,4 +37,5 @@ print('第' + str(n) + '对实验者选了最优解。')
 for i in range(n):
     # 注意数据类型的转换，以及计数起点的不同（0和1）
     print('第' + str(i+1) + '对实验者的选择是：' + str(list_answer[i]))
-        
+
+    
