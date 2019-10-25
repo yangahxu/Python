@@ -16,26 +16,27 @@
 #             print('小a喜提20年，小b大吉大利得1年')
 #         else:
 #             print('小b喜提20年，小a大吉大利得1年')
-        
-n = 0
-list_answer = []
+q = 0        
+box = []
 while True:
-    n += 1
-    a = input('A，你认罪吗？请回答认罪或者不认：')
-    b = input('B，你认罪吗？请回答认罪或者不认：')
-    list_answer.append([a,b])  # 用列表嵌套的方式来存放实验者的选择，也可用元组或字典
+    q = q + 1
+    a = input('小A，你认不认罪？')
+    b = input('小B，你认不认罪？')
+    box.append([a,b])
+    print(box)
+    print(q)
     if a == '认罪' and b == '认罪':
-        print('两人都得判10年，唉')
-    elif a == '不认' and b == '认罪':
-        print('A判20年，B判1年，唉')
-    elif a == '认罪' and b == '不认':
-        print('A判1年，B判20年')
+        print('两人都认罪，则各判10年')
+    elif a == '不认罪' and b == '认罪':
+        print('小A判20年,小B判1年')
+    elif  a == '认罪' and b == '不认罪':
+        print('小A判1年,小B判20年')
     else:
-        print('都判3年，太棒了')
+        print('两人都抵赖，各判3年')
         break
-print('第' + str(n) + '对实验者选了最优解。')
-for i in range(n):
-    # 注意数据类型的转换，以及计数起点的不同（0和1）
-    print('第' + str(i+1) + '对实验者的选择是：' + str(list_answer[i]))
-
+print('第'+str(q)+'组是最优选择')
+print('每组的结果如下:')
+for i in range(q):
     
+    print('第'+str(i+1)+'的结果为'+str(box[i]))
+
