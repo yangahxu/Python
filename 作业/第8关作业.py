@@ -19,3 +19,9 @@ print(len(list3))#显示列表长度
 selected = [x for x in list3 if x < int(average)]
 print(selected)
 #方法二:循环
+list4 = []
+for score  in list3:
+    if score < int(average):
+        list4.append(score)
+print(list4)
+
