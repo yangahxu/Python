@@ -12,5 +12,10 @@ print(list3)
 s = 0
 for i in list3:
     s = s + i
-average = s / 8
+average = s / len(list3)
 print(' 大家的平均分是%d ' % (average))
+print(len(list3))#显示列表长度
+#方法一:提取小于平均分的数字,int(average),直接使用average结果不符,95未排除;
+selected = [x for x in list3 if x < int(average)]
+print(selected)
+#方法二:循环
